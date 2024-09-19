@@ -5,15 +5,15 @@ ultimatebunny = [
     ("Code for Ultimate Bunny comes from Amorphous Material 052-AA/082/106")
 ]
 ajax = [
-    ("Enhanced Cells for Ajax comes from Amorphous Material 005/060/119/027aa")
-    ("Stabilizer for Ajax comes from Amorphous Material 049aa/088/107")
-    ("Spiral Catalyst for Ajax comes from Amorphous Material 031/070/126/067")
+    ("Enhanced Cells for Ajax comes from Amorphous Material 005/060/119/027aa"),
+    ("Stabilizer for Ajax comes from Amorphous Material 049aa/088/107"),
+    ("Spiral Catalyst for Ajax comes from Amorphous Material 031/070/126/067"),
     ("Code for Ajax comes from Amorphous Material 019/096/075/103")
 ]
 ultimateajax = [
-    ("Enhanced Cells for Ultimate Ajax comes from Amorphous Material 035/057/121")
-    ("Stabilizer for Ultimate Ajax comes from Amorphous Material 062/112/116")
-    ("Spiral Catalyst for Ultimate Ajax comes from Amorphous Material 094aa/098aa/124")
+    ("Enhanced Cells for Ultimate Ajax comes from Amorphous Material 035/057/121"),
+    ("Stabilizer for Ultimate Ajax comes from Amorphous Material 062/112/116"),
+    ("Spiral Catalyst for Ultimate Ajax comes from Amorphous Material 094aa/098aa/124"),
     ("Code for Ultimate Ajax comes from Amorphous Material 066/078/088")
 ]
 
@@ -177,7 +177,7 @@ if searchparameters == "ultimatebunny":    #ultimate_bunny
         if not whichubam in items:
             print("Invalid Selection")
         print(items[whichubam])
-if searchparamaters == "ajax":       #ajax
+if searchparameters == "ajax":       #ajax
     partselection = input("Which part do you need? enhanced_cells, stabilizer, spiral_catalyst, or code? ")
     if partselection == "enhanced_cells":
         print(ajax[0])
@@ -203,7 +203,7 @@ if searchparamaters == "ajax":       #ajax
         if not whichubam in items:
             print("Invalid Selection")
         print(items[whichubam])
-if searchparamaters == "ultimateajax":       #ultimate_ajax
+if searchparameters == "ultimateajax":       #ultimate_ajax
     partselection = input("Which part do you need? enhanced_cells, stabilizer, spiral_catalyst, or code? ")
     if partselection == "enhanced_cells":
         print(ultimateajax[0])

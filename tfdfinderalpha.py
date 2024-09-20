@@ -156,7 +156,7 @@ items = {
     'am052aa' : "Fortress - Defend Albion Resource - Special Operation",
     'am053' : "Fortress - Defend Albion Resource - Special Operation",
     'am054' : "Kingston - The Fallen Theater - Outpost",
-    'am055' : "Kingston - The Fallen Theater - Outpost (Infiltrate)",
+    'am055aa' : "Kingston - The Fallen Theater - Outpost (Infiltrate)",
     'am056' : "Kingston - Magister Lab - Infiltration",
     'am057' : "Kingston - Magister Lab - Infiltration",
     'am058' : "Kingston - Slumber Valley - Infiltration",
@@ -240,15 +240,24 @@ if searchparameters == "ultimatebunny":    #ultimate_bunny
     if partselection == "enhanced_cells":
         print(ultimatebunny[0])
         anom = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
-        if not anom in items:
+        if anom == "all":
+            print(f"Anomalous Material 009 - {items['am009']} \nAnomalous Material 037-AA -{items['am073aa']} \nAnomalous Material 113-AA - {items['am113aa']}")
+
+        elif not anom in items:
             print("Invalid Selection")
-        print(items[anom])
+        else:
+            print(items[anom])
     if partselection == "stabilizer": 
         print(ultimatebunny[1])
         anom = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
-        if not anom in items:
+        if anom == "all":
+            print(
+                f"Anomalous Material 024 - {items['am024']} \nAnomalous Material 099 -{items['am099']} \nAnomalous Material 117 - {items['am117']}")
+
+        elif not anom in items:
             print("Invalid Selection")
-        print(items[anom])
+        else:
+            print(items[anom])
     if partselection == "spiral_catalyst":
         print(ultimatebunny[2])
         anom = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")

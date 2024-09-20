@@ -16,6 +16,90 @@ ultimateajax = [
     ("Spiral Catalyst for Ultimate Ajax comes from Amorphous Material 094aa/098aa/124"),
     ("Code for Ultimate Ajax comes from Amorphous Material 066/078/088")
 ]
+enzo = [
+    ("Enhanced Cells for Enzo comes from Amorphous Material 003/050/097/028"),
+    ("Stabilizer for Enzo  comes from Amorphous Material 051/081aa/039/040"),
+    ("Spiral Catalyst for Enzo comes from Amorphous Material 110aa/011aa/021/037"),
+    ("Code for Enzo comes from Amorphous Material 093/025/035/053")
+]
+esiemo = [
+    ("Enhanced Cells for Esiemo comes from Amorphous Material 022/121/059/104"),
+    ("Stabilizer for Esiemo  comes from Amorphous Material 067/077/103"),
+    ("Spiral Catalyst for Esiemo comes from Amorphous Material 015aa/127/061/109"),
+    ("Code for Esiemo comes from Amorphous Material 054/074/090aa")
+]
+gley = [
+    ("Enhanced Cells for Gley comes from Amorphous Material 066/120/012/053"),
+    ("Stabilizer for Gley comes from Amorphous Material 013/083/047"),
+    ("Spiral Catalyst for Gley comes from Amorphous Material 028/050/078/099"),
+    ("Code for Gley comes from Amorphous Material 124/069/093/002")
+]
+ultimategley = [
+    ("Enhanced Cells for Ultimate Gley comes from Amorphous Material 060/084/122"),
+    ("Stabilizer for Ultimate Gley comes from Amorphous Material 076/092/104"),
+    ("Spiral Catalyst for Ultimate Gley comes from Amorphous Material 072/096/102"),
+    ("Code for Ultimate Gley comes from Amorphous Material 058/068aa/126")
+]
+jayber = [
+    ("Enhanced Cells for Jayber comes from Amorphous Material 003/055aa/091/119"),
+    ("Stabilizer for Jayber comes from Amorphous Material 062/101/111"),
+    ("Spiral Catalyst for Jayber comes from Amorphous Material 045/116/089"),
+    ("Code for Jayber comes from Amorphous Material 047/092/100/065")
+]
+kyle = [
+    ("Enhanced Cells for Kyle comes from Amorphous Material 041/054/082/063"),
+    ("Stabilizer for Kyle comes from Amorphous Material 017aa/058/076/127"),
+    ("Spiral Catalyst for Kyle comes from Amorphous Material 055aa/105/123"),
+    ("Code for Kyle comes from Amorphous Material 007/109/101")
+]
+lepic = [
+    ("Enhanced Cells for Lepic comes from Amorphous Material 012/064/080/108"),
+    ("Stabilizer for Lepic comes from Amorphous Material 056/122/004/019"),
+    ("Spiral Catalyst for Lepic comes from Amorphous Material 043/010/079"),
+    ("Code for Lepic comes from Amorphous Material 013/072/106")
+]
+ultimatelepic = [
+    ("Enhanced Cells for Ultimate Lepic comes from Amorphous Material 026/077/074"),
+    ("Stabilizer for Ultimate Lepic comes from Amorphous Material 001/059/105"),
+    ("Spiral Catalyst for Ultimate Lepic comes from Amorphous Material 006/069/085"),
+    ("Code for Ultimate Lepic comes from Amorphous Material 021/061/089")
+]
+luna = [
+    ("Enhanced Cells for Luna comes from Amorphous Material 081aa/017aa/038aa"),
+    ("Stabilizer for Luna comes from Amorphous Material 020aa/098aa/068aa"),
+    ("Spiral Catalyst for Luna comes from Amorphous Material 071aa/015aa/049aa"),
+    ("Code for Luna comes from Amorphous Material 027aa/090aa/094aa")
+]
+valby = [
+    ("Enhanced Cells for Valby comes from Amorphous Material 118/016/033/048"),
+    ("Stabilizer for Valby comes from Amorphous Material 086/020aa/029/042"),
+    ("Spiral Catalyst for Valby comes from Amorphous Material 112/009/026"),
+    ("Code for Valby comes from Amorphous Material 063/036/006/032")
+]
+ultimatevalby = [
+    ("Enhanced Cells for Ultimate Valby comes from Amorphous Material 011aa/044aa/115aa"),
+    ("Stabilizer for Ultimate Valby comes from Amorphous Material 030aa/055aa/113aa"),
+    ("Spiral Catalyst for Ultimate Valby comes from Amorphous Material 023aa/052aa/073aa"),
+    ("Code for Ultimate Valby comes from Amorphous Material 110aa/087aa/125aa")
+]
+viessa = [
+    ("Enhanced Cells for Viessa comes from Amorphous Material 004/097/034"),
+    ("Stabilizer for Viessa comes from Amorphous Material 024/102/115aa/014"),
+    ("Spiral Catalyst for Viessa comes from Amorphous Material 117/084/008/046"),
+    ("Code for Viessa comes from Amorphous Material 018/083/030aa/095")
+]
+ultimateviessa = [
+    ("Enhanced Cells for Ultimate Viessa comes from Amorphous Material 056/086/114"),
+    ("Stabilizer for Ultimate Viessa comes from Amorphous Material 043/091/107"),
+    ("Spiral Catalyst for Ultimate Viessa comes from Amorphous Material 070/108/118"),
+    ("Code for Ultimate Viessa comes from Amorphous Material 038aa/075/125aa")
+]
+yujin = [
+    ("Enhanced Cells for Yujin comes from Amorphous Material 045/114/085"),
+    ("Stabilizer for Yujin comes from Amorphous Material 065/079/095/111"),
+    ("Spiral Catalyst for Yujin comes from Amorphous Material 033/071aa/057"),
+    ("Code for Yujin comes from Amorphous Material 064/080/100/120")
+]
 
 items = {
     'am001' : "Kingston - The Fallen Theater - Outpost",
@@ -150,82 +234,446 @@ items = {
 
 
 
-searchparameters = input("What are you looking for? \n hint: if you're looking for a specific material, ie Amorphous Material 009, search for am009 ")
+searchparameters = input("What are you looking for? \n hint: if you're looking for a specific material, ie Amorphous Material 009, search for am009 \n")
 if searchparameters == "ultimatebunny":    #ultimate_bunny
     partselection = input("Which part do you need? enhanced_cells, stabilizer, spiral_catalyst, or code? ")
     if partselection == "enhanced_cells":
         print(ultimatebunny[0])
-        whichubam = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
-        if not whichubam in items:
+        anom = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
+        if not anom in items:
             print("Invalid Selection")
-        print(items[whichubam])
+        print(items[anom])
     if partselection == "stabilizer": 
         print(ultimatebunny[1])
-        whichubam = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
-        if not whichubam in items:
+        anom = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
+        if not anom in items:
             print("Invalid Selection")
-        print(items[whichubam])
+        print(items[anom])
     if partselection == "spiral_catalyst":
         print(ultimatebunny[2])
-        whichubam = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
-        if not whichubam in items:
+        anom = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
+        if not anom in items:
             print("Invalid Selection")
-        print(items[whichubam])
+        print(items[anom])
     if partselection == "code":
         print(ultimatebunny[3])
-        whichubam = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
-        if not whichubam in items:
+        anom = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
+        if not anom in items:
             print("Invalid Selection")
-        print(items[whichubam])
+        print(items[anom])
 if searchparameters == "ajax":       #ajax
     partselection = input("Which part do you need? enhanced_cells, stabilizer, spiral_catalyst, or code? ")
     if partselection == "enhanced_cells":
         print(ajax[0])
-        whichubam = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
-        if not whichubam in items:
+        anom = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
+        if not anom in items:
             print("Invalid Selection")
-        print(items[whichubam])
+        print(items[anom])
     if partselection == "stabilizer": 
         print(ajax[1])
-        whichubam = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
-        if not whichubam in items:
+        anom = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
+        if not anom in items:
             print("Invalid Selection")
-        print(items[whichubam])
+        print(items[anom])
     if partselection == "spiral_catalyst":
         print(ajax[2])
-        whichubam = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
-        if not whichubam in items:
+        anom = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
+        if not anom in items:
             print("Invalid Selection")
-        print(items[whichubam])
+        print(items[anom])
     if partselection == "code":
         print(ajax[3])
-        whichubam = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
-        if not whichubam in items:
+        anom = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
+        if not anom in items:
             print("Invalid Selection")
-        print(items[whichubam])
+        print(items[anom])
 if searchparameters == "ultimateajax":       #ultimate_ajax
     partselection = input("Which part do you need? enhanced_cells, stabilizer, spiral_catalyst, or code? ")
     if partselection == "enhanced_cells":
         print(ultimateajax[0])
-        whichubam = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
-        if not whichubam in items:
+        anom = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
+        if not anom in items:
             print("Invalid Selection")
-        print(items[whichubam])
+        print(items[anom])
     if partselection == "stabilizer": 
         print(ultimateajax[1])
-        whichubam = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
-        if not whichubam in items:
+        anom = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
+        if not anom in items:
             print("Invalid Selection")
-        print(items[whichubam])
+        print(items[anom])
     if partselection == "spiral_catalyst":
         print(ultimateajax[2])
-        whichubam = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
-        if not whichubam in items:
+        anom = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
+        if not anom in items:
             print("Invalid Selection")
-        print(items[whichubam])
+        print(items[anom])
     if partselection == "code":
         print(ultimateajax[3])
-        whichubam = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
-        if not whichubam in items:
+        anom = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
+        if not anom in items:
             print("Invalid Selection")
-        print(items[whichubam])
+        print(items[anom])
+if searchparameters == "enzo":       #enzo
+    partselection = input("Which part do you need? enhanced_cells, stabilizer, spiral_catalyst, or code? ")
+    if partselection == "enhanced_cells":
+        print(enzo[0])
+        anom = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
+        if not anom in items:
+            print("Invalid Selection")
+        print(items[anom])
+    if partselection == "stabilizer":
+        print(enzo[1])
+        anom = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
+        if not anom in items:
+            print("Invalid Selection")
+        print(items[anom])
+    if partselection == "spiral_catalyst":
+        print(enzo[2])
+        anom = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
+        if not anom in items:
+            print("Invalid Selection")
+        print(items[anom])
+    if partselection == "code":
+        print(enzo[3])
+        anom = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
+        if not anom in items:
+            print("Invalid Selection")
+        print(items[anom])
+if searchparameters == "esiemo":       #esiemo
+    partselection = input("Which part do you need? enhanced_cells, stabilizer, spiral_catalyst, or code? ")
+    if partselection == "enhanced_cells":
+        print(esiemo[0])
+        anom = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
+        if not anom in items:
+            print("Invalid Selection")
+        print(items[anom])
+    if partselection == "stabilizer":
+        print(esiemo[1])
+        anom = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
+        if not anom in items:
+            print("Invalid Selection")
+        print(items[anom])
+    if partselection == "spiral_catalyst":
+        print(esiemo[2])
+        anom = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
+        if not anom in items:
+            print("Invalid Selection")
+        print(items[anom])
+    if partselection == "code":
+        print(esiemo[3])
+        anom = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
+        if not anom in items:
+            print("Invalid Selection")
+        print(items[anom])
+if searchparameters == "gley":       #gley
+    partselection = input("Which part do you need? enhanced_cells, stabilizer, spiral_catalyst, or code? ")
+    if partselection == "enhanced_cells":
+        print(gley[0])
+        anom = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
+        if not anom in items:
+            print("Invalid Selection")
+        print(items[anom])
+    if partselection == "stabilizer":
+        print(gley[1])
+        anom = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
+        if not anom in items:
+            print("Invalid Selection")
+        print(items[anom])
+    if partselection == "spiral_catalyst":
+        print(gley[2])
+        anom = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
+        if not anom in items:
+            print("Invalid Selection")
+        print(items[anom])
+    if partselection == "code":
+        print(gley[3])
+        anom = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
+        if not anom in items:
+            print("Invalid Selection")
+        print(items[anom])
+if searchparameters == "ultimategley":       #ultimategley
+    partselection = input("Which part do you need? enhanced_cells, stabilizer, spiral_catalyst, or code? ")
+    if partselection == "enhanced_cells":
+        print(ultimategley[0])
+        anom = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
+        if not anom in items:
+            print("Invalid Selection")
+        print(items[anom])
+    if partselection == "stabilizer":
+        print(ultimategley[1])
+        anom = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
+        if not anom in items:
+            print("Invalid Selection")
+        print(items[anom])
+    if partselection == "spiral_catalyst":
+        print(ultimategley[2])
+        anom = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
+        if not anom in items:
+            print("Invalid Selection")
+        print(items[anom])
+    if partselection == "code":
+        print(ultimategley[3])
+        anom = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
+        if not anom in items:
+            print("Invalid Selection")
+        print(items[anom])
+if searchparameters == "jayber":       #jayber
+    partselection = input("Which part do you need? enhanced_cells, stabilizer, spiral_catalyst, or code? ")
+    if partselection == "enhanced_cells":
+        print(jayber[0])
+        anom = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
+        if not anom in items:
+            print("Invalid Selection")
+        print(items[anom])
+    if partselection == "stabilizer":
+        print(jayber[1])
+        anom = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
+        if not anom in items:
+            print("Invalid Selection")
+        print(items[anom])
+    if partselection == "spiral_catalyst":
+        print(jayber[2])
+        anom = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
+        if not anom in items:
+            print("Invalid Selection")
+        print(items[anom])
+    if partselection == "code":
+        print(jayber[3])
+        anom = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
+        if not anom in items:
+            print("Invalid Selection")
+        print(items[anom])
+if searchparameters == "kyle":       #kyle
+    partselection = input("Which part do you need? enhanced_cells, stabilizer, spiral_catalyst, or code? ")
+    if partselection == "enhanced_cells":
+        print(kyle[0])
+        anom = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
+        if not anom in items:
+            print("Invalid Selection")
+        print(items[anom])
+    if partselection == "stabilizer":
+        print(kyle[1])
+        anom = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
+        if not anom in items:
+            print("Invalid Selection")
+        print(items[anom])
+    if partselection == "spiral_catalyst":
+        print(kyle[2])
+        anom = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
+        if not anom in items:
+            print("Invalid Selection")
+        print(items[anom])
+    if partselection == "code":
+        print(kyle[3])
+        anom = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
+        if not anom in items:
+            print("Invalid Selection")
+        print(items[anom])
+if searchparameters == "lepic":       #lepic
+    partselection = input("Which part do you need? enhanced_cells, stabilizer, spiral_catalyst, or code? ")
+    if partselection == "enhanced_cells":
+        print(lepic[0])
+        anom = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
+        if not anom in items:
+            print("Invalid Selection")
+        print(items[anom])
+    if partselection == "stabilizer":
+        print(lepic[1])
+        anom = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
+        if not anom in items:
+            print("Invalid Selection")
+        print(items[anom])
+    if partselection == "spiral_catalyst":
+        print(lepic[2])
+        anom = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
+        if not anom in items:
+            print("Invalid Selection")
+        print(items[anom])
+    if partselection == "code":
+        print(lepic[3])
+        anom = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
+        if not anom in items:
+            print("Invalid Selection")
+        print(items[anom])
+if searchparameters == "ultimatelepic":       #ultimatelepic
+    partselection = input("Which part do you need? enhanced_cells, stabilizer, spiral_catalyst, or code? ")
+    if partselection == "enhanced_cells":
+        print(ultimatelepic[0])
+        anom = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
+        if not anom in items:
+            print("Invalid Selection")
+        print(items[anom])
+    if partselection == "stabilizer":
+        print(ultimatelepic[1])
+        anom = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
+        if not anom in items:
+            print("Invalid Selection")
+        print(items[anom])
+    if partselection == "spiral_catalyst":
+        print(ultimatelepic[2])
+        anom = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
+        if not anom in items:
+            print("Invalid Selection")
+        print(items[anom])
+    if partselection == "code":
+        print(ultimatelepic[3])
+        anom = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
+        if not anom in items:
+            print("Invalid Selection")
+        print(items[anom])
+if searchparameters == "luna":       #luna
+    partselection = input("Which part do you need? enhanced_cells, stabilizer, spiral_catalyst, or code? ")
+    if partselection == "enhanced_cells":
+        print(luna[0])
+        anom = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
+        if not anom in items:
+            print("Invalid Selection")
+        print(items[anom])
+    if partselection == "stabilizer":
+        print(luna[1])
+        anom = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
+        if not anom in items:
+            print("Invalid Selection")
+        print(items[anom])
+    if partselection == "spiral_catalyst":
+        print(luna[2])
+        anom = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
+        if not anom in items:
+            print("Invalid Selection")
+        print(items[anom])
+    if partselection == "code":
+        print(luna[3])
+        anom = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
+        if not anom in items:
+            print("Invalid Selection")
+        print(items[anom])
+if searchparameters == "valby":       #valby
+    partselection = input("Which part do you need? enhanced_cells, stabilizer, spiral_catalyst, or code? ")
+    if partselection == "enhanced_cells":
+        print(valby[0])
+        anom = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
+        if not anom in items:
+            print("Invalid Selection")
+        print(items[anom])
+    if partselection == "stabilizer":
+        print(valby[1])
+        anom = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
+        if not anom in items:
+            print("Invalid Selection")
+        print(items[anom])
+    if partselection == "spiral_catalyst":
+        print(valby[2])
+        anom = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
+        if not anom in items:
+            print("Invalid Selection")
+        print(items[anom])
+    if partselection == "code":
+        print(valby[3])
+        anom = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
+        if not anom in items:
+            print("Invalid Selection")
+        print(items[anom])
+if searchparameters == "ultimatevalby":       #ultimatevalby
+    partselection = input("Which part do you need? enhanced_cells, stabilizer, spiral_catalyst, or code? ")
+    if partselection == "enhanced_cells":
+        print(ultimatevalby[0])
+        anom = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
+        if not anom in items:
+            print("Invalid Selection")
+        print(items[anom])
+    if partselection == "stabilizer":
+        print(ultimatevalby[1])
+        anom = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
+        if not anom in items:
+            print("Invalid Selection")
+        print(items[anom])
+    if partselection == "spiral_catalyst":
+        print(ultimatevalby[2])
+        anom = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
+        if not anom in items:
+            print("Invalid Selection")
+        print(items[anom])
+    if partselection == "code":
+        print(ultimatevalby[3])
+        anom = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
+        if not anom in items:
+            print("Invalid Selection")
+        print(items[anom])
+if searchparameters == "viessa":       #viessa
+    partselection = input("Which part do you need? enhanced_cells, stabilizer, spiral_catalyst, or code? ")
+    if partselection == "enhanced_cells":
+        print(viessa[0])
+        anom = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
+        if not anom in items:
+            print("Invalid Selection")
+        print(items[anom])
+    if partselection == "stabilizer":
+        print(viessa[1])
+        anom = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
+        if not anom in items:
+            print("Invalid Selection")
+        print(items[anom])
+    if partselection == "spiral_catalyst":
+        print(viessa[2])
+        anom = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
+        if not anom in items:
+            print("Invalid Selection")
+        print(items[anom])
+    if partselection == "code":
+        print(viessa[3])
+        anom = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
+        if not anom in items:
+            print("Invalid Selection")
+        print(items[anom])
+if searchparameters == "ultimateviessa":       #ultimateviessa
+    partselection = input("Which part do you need? enhanced_cells, stabilizer, spiral_catalyst, or code? ")
+    if partselection == "enhanced_cells":
+        print(ultimateviessa[0])
+        anom = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
+        if not anom in items:
+            print("Invalid Selection")
+        print(items[anom])
+    if partselection == "stabilizer":
+        print(ultimateviessa[1])
+        anom = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
+        if not anom in items:
+            print("Invalid Selection")
+        print(items[anom])
+    if partselection == "spiral_catalyst":
+        print(ultimateviessa[2])
+        anom = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
+        if not anom in items:
+            print("Invalid Selection")
+        print(items[anom])
+    if partselection == "code":
+        print(ultimateviessa[3])
+        anom = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
+        if not anom in items:
+            print("Invalid Selection")
+        print(items[anom])
+if searchparameters == "yujin":       #yujin
+    partselection = input("Which part do you need? enhanced_cells, stabilizer, spiral_catalyst, or code? ")
+    if partselection == "enhanced_cells":
+        print(yujin[0])
+        anom = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
+        if not anom in items:
+            print("Invalid Selection")
+        print(items[anom])
+    if partselection == "stabilizer":
+        print(yujin[1])
+        anom = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
+        if not anom in items:
+            print("Invalid Selection")
+        print(items[anom])
+    if partselection == "spiral_catalyst":
+        print(yujin[2])
+        anom = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
+        if not anom in items:
+            print("Invalid Selection")
+        print(items[anom])
+    if partselection == "code":
+        print(yujin[3])
+        anom = input("Which Anomalous Material would you like to search for? \n Hint: Search using abbreviations like am001 or am113aa. You can also say all to show all options \n")
+        if not anom in items:
+            print("Invalid Selection")
+        print(items[anom])
